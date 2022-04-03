@@ -1,0 +1,169 @@
+:root {
+    --color-section-two: #2bb3b1;
+    --bright-yellow: hsl(71, 73%, 54%);
+
+    --background-color: #dfe9f2;
+    --color-section-three: #4abebd;
+}
+
+/* General Settings */
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--background-color);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+
+
+
+
+/* Section ONE */
+.section-one {
+    background-color: white;
+    height: 265px;
+    width: 310px;
+    border-radius: 0.4rem 0.4rem 0 0;
+}
+.section-one h2 {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 35px;
+    color: var(--color-section-two);
+    font-size: 20px;
+}
+.section-one p {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.pone {
+    color: var(--bright-yellow);
+}
+.ptwo {
+    color: #c6cad3;
+    font-size: 14px;
+    line-height: 180%;
+}
+
+
+/* Section TWO */
+.section-two {
+    background-color: var(--color-section-two);
+    height: 230px;
+    width: 310px;
+    color: white;
+}
+.section-two h2 {
+    margin: 0px 25px 15px 25px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+.list {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0 25px 10px 25px;
+}
+.list :first-child{
+    margin-right: 15px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.list :nth-child(2) {
+    text-align: center;
+    margin-top: 8px;
+    color: #68d8d9;
+}
+.section-two p {
+    margin-left: 25px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.section-two button {
+    background-color: var(--bright-yellow);
+    height: 50px;
+    width: 260px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+.section-two button:hover {
+    cursor: pointer;
+}
+
+
+/* Section THREE */
+.section-three {
+    background-color: var(--color-section-three);
+    height: 230px;
+    width: 310px;
+    border-radius: 0 0 0.4rem 0.4rem;
+    color: white;
+}
+.section-three h2 {
+    margin: 0px 25px 15px 25px;
+    padding-top: 30px;
+}
+.section-three p {
+    margin-left: 25px;
+    margin-right: 70px;
+}
+
+
+/* Footer Area*/
+footer {
+    position: fixed;
+    bottom: 0;
+    margin-left: 43%;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+@media (min-width: 992px) {
+    .container {
+        margin-top: 200px;
+    }
+    .section-one {
+        height: 215px;
+        width: 635px;
+    }
+    .desktop-section{
+        display: flex;
+    }
+    .section-two {
+        height: 260px;
+        width: 317.5px;
+        border-radius: 0 0 0 0.4rem;
+    }
+    .section-two button {
+        margin-top: 15px;
+    }
+
+    .section-three {
+        height: 260px;
+        width: 317.5px;
+        border-radius: 0 0 0.4rem 0;
+        line-height: 1.4rem;
+    }
+}
+    
+    
